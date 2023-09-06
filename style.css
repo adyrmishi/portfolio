@@ -1,0 +1,310 @@
+html {
+    scroll-behavior: smooth;
+  }
+ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+ 
+}
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    height: 3rem;
+}
+.menu > li {
+    list-style-type: none;
+}
+nav {
+    background-color: #4692c5;
+    text-align: right;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    margin-left: -0.5rem;
+}
+.logos > li {
+    list-style-type: none;  
+}
+.logos > li > a > img {
+    height: 3rem;
+    width: auto;
+    padding-right: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+ 
+.logos > li > a > img:hover {
+    filter: none;
+}
+a {
+    color: #F8E5D7;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+    padding: 0.50rem;
+    font-size: 1.25rem;
+    transition: all 0.2s ease-in-out;
+}
+a:hover {
+    font-weight: 700;
+    color: #e5e5e5;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+}
+#home {
+    font-family: 'Lato';
+    padding: 10rem;
+    background: rgb(167,222,255);
+    background: radial-gradient(circle, rgba(167,222,255,1) 0%, rgba(255,137,161,1) 100%);
+    height: 50rem;
+}
+ 
+#home > h1 {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 700;
+    margin-top: 7rem;
+    color: #f6ecec;
+    font-size: 5rem;
+}
+ 
+#home > p {
+    color: #0b3a55;
+    font-size: 1.5rem;
+    font-weight: medium;
+    vertical-align: middle;
+    margin-top: 1rem;
+    font-family: 'Inconsolata', monospace;
+}
+ 
+#about, #projects {
+    font-family: 'Lato';
+    padding: 5rem 8rem;
+    background: rgb(167,222,255);
+    background: radial-gradient(circle, rgba(167,222,255,1) 0%, rgba(255,137,161,1) 100%);
+    height: 50rem;
+    z-index: 2;
+}
+ 
+#about > h1, #projects > h1 {
+    margin-top: 1rem;
+    font-size: 4rem;
+    font-family: 'Martian Mono', monospace;
+    font-weight: 700;
+    color: #f6ecec;
+}
+ 
+#about-main, #projects-gallery {
+    display: flex;
+    flex-direction: row;
+    height: 35rem;
+    gap: 2rem;
+}
+ 
+#timeline, #extra-info > div, #projects-gallery > div {
+    flex: 1;
+    background-color: #f6ecec;
+    margin-top: 2rem;
+    border: 1px #04521f solid;
+}
+ 
+#extra-info {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+ 
+h2, .container > p:first-of-type {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 700;
+    color: #04521f;
+    padding: 0.8rem;
+}
+#timeline {
+    padding-bottom: 1rem;
+}
+
+footer {
+    background-color: #4692c5;
+    font-family: 'Inconsolata', monospace;
+    color: #f6ecec;
+    display: flex;
+    justify-content: space-between;
+}
+footer > p {
+    font-size: 0.8rem;
+    align-self: center;
+    padding-right: 0.8rem;
+}
+footer > a {
+    background-color: #a2daeb;
+    border: 1px #1e688d solid;
+    max-width: max-content;
+    border-radius: 20px;
+    color: #1e688d;
+    margin: 0.5rem 0rem;
+    padding: 3px 15px;
+    margin-left: 2rem;
+    align-self: center;
+    font-size: 0.8rem;
+}
+footer > a {
+    background-color: #a2daeb;
+    border: 1px #1e688d solid;
+    max-width: max-content;
+    border-radius: 20px;
+    color: #1e688d;
+    margin: 0.5rem 0rem;
+    padding: 3px 15px;
+    margin-left: 2rem;
+    align-self: center;
+    font-size: 0.8rem;
+}
+#projects-gallery > div.disabled {
+    opacity: 0.5;
+}
+#cinema, #globetrotter {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+#cinema > p, #globetrotter > p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#projects-gallery > div > img, video {
+    width: 80%;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+#skills > ul, #interests > ul, .container > p:last-of-type, div > p {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    font-size: 1rem;
+    list-style: inside;
+    color: #04521f;
+    justify-content: center;
+}
+h3 {
+    font-family: 'Martian Mono', monospace;
+    font-weight: 500;
+    color: #04521f;
+    padding: 0.8rem;
+}
+.project-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-nav > a {
+    background-color: #a2daeb;
+    border: 1px #1e688d solid;
+    max-width: max-content;
+    border-radius: 20px;
+    color: #1e688d;
+    margin: 0.5rem 0rem;
+    padding: 3px 5px;
+    margin-left: 2rem;
+    align-self: center;
+    font-size: 1.2rem;
+}
+p > a {
+    color: #04521f;
+    padding: 0;
+    transition: none;
+    font-family: 'Martian Mono', monospace;
+}
+p > a:hover {
+    color: #04521f;
+    padding: 0;
+    transition: none;
+    font-family: 'Martian Mono', monospace;
+}
+ 
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #main {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+      #home {
+        display: flex;
+        flex-direction: column;
+        height: 670px;
+        padding: 60px;
+        width: 100%;
+        top: 48px;
+      }
+      #home > h1, #about > h1, #projects > h1 {
+        font-size: 40px;
+      }
+      #home > p {
+        font-size: 20px;
+      }
+      #about, #projects {
+        font-family: 'Lato';
+        padding: 2rem;
+        background: rgb(167,222,255);
+        background: radial-gradient(circle, rgba(167,222,255,1) 0%, rgba(255,137,161,1) 100%);
+        height: 80rem;
+        z-index: 2;
+    }
+    #about-main, #projects-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+    #extra-info {
+        width: 100%;
+    }
+    #extra-info > * {
+        padding-bottom: 1rem;
+    }
+    #about > h1, #projects > h1 {
+        padding-top: 1.5rem;
+    }
+    #projects{
+        padding-top: 1rem;
+        height: 90rem;
+    }
+    #extra-info > #skills {
+        margin-top: 0;
+    }
+    #about {
+        padding-bottom: 0;
+    }
+    #projects-gallery > div {
+        margin-top: 0;
+    }
+    #projects-gallery > div:first-of-type {
+        margin-top: 2rem;
+    }
+    #projects-gallery > div > img, video {
+        width: 80%;
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+  }
+ 
